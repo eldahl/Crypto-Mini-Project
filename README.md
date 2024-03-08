@@ -13,4 +13,4 @@ The resulting hash is then used as a key for AES-GCM to encrypt and decrypt the 
 ### Attack vectors
 The above security model is ineffective if the underlying system is compromised by a keylogger, or another form of data collector.  
 
-Given that two layers of hashing algorithms that are computationally expensive are used, the risk of brute forceing attacks are lowered substantially. However, the user should still take care not to use a password of short length.
+Given that two layers of hashing algorithms, that are computationally expensive, are used, the risk of brute forceing attacks are lowered substantially. However, the user should still take care not to use a password of short length.
