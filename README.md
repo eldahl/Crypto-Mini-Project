@@ -34,10 +34,12 @@ The user's password is used as an initial input. Password-Based Key Derivation F
 Next, the [Scrypt](https://en.wikipedia.org/wiki/Scrypt) hash algorithm is applied to the previously derived key.  
 The resulting hash is then used as a key for AES-GCM to encrypt and decrypt the passwords stored in the SQLite database.
 
-### Attack vectors & pitfalls
-The above security model is ineffective if the underlying system is compromised by a keylogger, or another form of data collector, or any form of backdoor.  
+It can be argued that only one hashing algorithm is necessary. Without deeper knowledge of the cryptographic details of each hashing algorithm, it is not possible for me to conclude whether there is actually any benefit to this extra layer of hashing. 
 
-Given that two layers of hashing algorithms, that are computationally expensive, are used, the risk of brute forceing attacks are lowered substantially. However, the user should still take care not to use a password of short length.
+### Attack vectors & pitfalls
+- The above security model is ineffective if the underlying system is compromised by a keylogger, or another form of data collector, or any form of backdoor.
+- No considerations have been taken to keep the SQLite database secure. However, since it is not possible to decrypt the passwords with the unencrypted data, it is considered negligeable.
+- Given that two layers of hashing algorithms, that are computationally expensive, are used, the risk of brute forceing attacks are lowered substantially. However, the user should still take care not to use a password of short length.
 
 ## Limitations
 At it's current state, it is possible to specify a service name, username, and password; only the password is encrypted.
