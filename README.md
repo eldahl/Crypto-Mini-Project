@@ -23,7 +23,7 @@ The solution can then be opened, and compiled to a binary using the graphical in
 - Entities with malicious intentions are a constant worry for IT companies. By gaining access to systems with flawed security, the threat actors are able to gain access to passwords of end-users, which they can use to gain further access to services that the end-users might posses.
 
 In order to withstand compromise of a service, such that other services are not compromised as well, it is essential to use unique passwords for each service.
-This is where the concept of a password manager comes increasingly more useful: by centralizing all the passwords to a single container, and putting a master lock onto it.  
+This is where the concept of a password manager becomes increasingly more useful: by centralizing all the passwords to a single container, and putting a master lock onto it.  
 
 ### Security model
 <p align="center">
