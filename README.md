@@ -1,5 +1,5 @@
 # Crypto mini-project
-The goal of the following project is to make a password manager.
+The goal of the following project was to make a password manager.
 
 ## Running the Password Manager
 As this project is constructed using C#/WPF, the easiest course of action is to download and install the latest version of Visual Studio.  
